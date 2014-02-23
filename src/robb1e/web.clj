@@ -2,11 +2,13 @@
   (:require [compojure.core :refer [defroutes]]
             [ring.adapter.jetty :as container]
             [compojure.handler :as handler]
+            [compojure.route :as route]
             [robb1e.controllers.home :as homeController])
   (:gen-class))
 
 (defroutes routes
-  homeController/routes)
+  homeController/routes
+  (route/resources "/"))
 
 (def application (handler/site routes))
 

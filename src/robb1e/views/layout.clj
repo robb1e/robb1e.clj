@@ -4,7 +4,8 @@
 (defn common [body]
   (h/html5
    [:head
-    [:title "robb1e dot com"]]
+    [:title "robb1e dot com"]
+    (h/include-css "/stylesheets/base.css")]
    [:body
     [:div {:id "header"}
      [:h1 {:class "container"} "robb1e dot com"]]
