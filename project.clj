@@ -8,7 +8,9 @@
                  [ring/ring-jetty-adapter "1.2.1"]
                  [hiccup "1.0.4"]
                  [compojure "1.1.6"]]
-  :plugins [[lein-haml-sass "0.2.7-SNAPSHOT"]]
+  :test-paths ["spec"]
+  :plugins [[lein-haml-sass "0.2.7-SNAPSHOT"]
+            [speclj "2.9.0"]]
   :sass {:src "resources/sass"
          :output-directory "resources/public/stylesheets"
          :output-extension "css"

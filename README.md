@@ -14,6 +14,12 @@ Run `lein sass clean` to clear the generated files.
 
 See `project.clj` for configuration.
 
+### Testing
+
+This project is using [speclj](http://speclj.com/)
+
+To run tests `lein spec`
+
 ## License
 
 Distributed under the Eclipse Public License either version 1.0 or (at
