@@ -4,7 +4,7 @@ A Clojure application for my personal homepage
 
 ## Development
 
-- install [Lein](leiningen.org)
+- install [Lein](http://leiningen.org)
 
 ### SASS
 
