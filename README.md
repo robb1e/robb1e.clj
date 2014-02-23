@@ -1,14 +1,12 @@
 # robb1e
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure application for my personal homepage
 
-## Usage
+## Development
 
-FIXME
+- install [Lein](leiningen.org)
 
 ## License
-
-Copyright © 2014 FIXME
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
