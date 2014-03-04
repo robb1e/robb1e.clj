@@ -7,8 +7,10 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [ring/ring-jetty-adapter "1.2.1"]
                  [hiccup "1.0.4"]
-                 [compojure "1.1.6"]]
-  :test-paths ["spec"]
+                 [compojure "1.1.6"]
+                 [org.clojure/java.jdbc "0.3.2"]
+                 [postgresql "9.1-901.jdbc4"]
+                 [clj-time "0.6.0"]]
   :plugins [[lein-haml-sass "0.2.7-SNAPSHOT"]
             [speclj "2.9.0"]]
   :sass {:src "resources/sass"
