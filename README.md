@@ -16,9 +16,7 @@ See `project.clj` for configuration.
 
 ### Testing
 
-This project is using [speclj](http://speclj.com/)
-
-To run tests `lein spec`
+To run tests `lein test`
 
 ## License
 
