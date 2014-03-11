@@ -11,6 +11,7 @@
                  [org.clojure/java.jdbc "0.3.2"]
                  [postgresql "9.1-901.jdbc4"]
                  [clj-time "0.6.0"]]
+  :main robb1e.web
   :plugins [[lein-haml-sass "0.2.7-SNAPSHOT"]]
   :sass {:src "resources/sass"
          :output-directory "resources/public/stylesheets"
