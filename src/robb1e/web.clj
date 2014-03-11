@@ -6,8 +6,14 @@
             [robb1e.controllers.home :as homeController])
   (:gen-class))
 
+(def port
+  (Integer. (or (System/getenv "PORT") "8080")))
+
+(def db
+  (or (System/getenv "DATABASE_URL") "postgresql://localhost:5432/robb1e"))
+
 (defroutes routes
-  (homeController/routes "postgresql://localhost:5432/robb1e")
+  (homeController/routes db)
   (route/resources "/"))
 
 (def application (handler/site routes))
@@ -16,4 +22,4 @@
   (container/run-jetty application {:port port :join? false}))
 
 (defn -main []
-  (start 8080))
+  (start port))
