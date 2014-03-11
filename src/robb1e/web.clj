@@ -7,7 +7,7 @@
   (:gen-class))
 
 (defroutes routes
-  homeController/routes
+  (homeController/routes "postgresql://localhost:5432/robb1e")
   (route/resources "/"))
 
 (def application (handler/site routes))
