@@ -6,6 +6,12 @@ A Clojure application for my personal homepage
 
 - install [Lein](http://leiningen.org)
 
+### Database
+
+This project uses the Ruby ActiveRecord migrations. To setup the database, run:
+
+    rake db:create db:migrate db:test:prepare
+
 ### SASS
 
 Run `lein sass auto` to have lein watch the `resources/sass` directory and output to `resources/public/stylesheets`.

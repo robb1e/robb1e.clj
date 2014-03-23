@@ -1,0 +1,12 @@
+development:
+  adapter: postgresql
+  database: robb1e
+  pool: 5
+  timeout: 5000
+  min_messages: WARNING
+
+test:
+  adapter: postgresql
+  database: robb1e_test
+  pool: 5
+  timeout: 5000
