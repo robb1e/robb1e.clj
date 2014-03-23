@@ -24,6 +24,14 @@ See `project.clj` for configuration.
 
 To run tests `lein test`
 
+## Production
+
+### Heroku
+
+Set the clojure build pack
+
+    heroku config:add BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-clojure.git
+
 ## License
 
 Distributed under the Eclipse Public License either version 1.0 or (at
