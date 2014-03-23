@@ -28,9 +28,9 @@ To run tests `lein test`
 
 ### Heroku
 
-Set the clojure build pack
+Set multiple build packs for both Clojure and Ruby
 
-    heroku config:add BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-clojure.git
+    heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
 
 ## License
 
