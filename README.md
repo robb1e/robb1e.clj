@@ -28,6 +28,15 @@ See `project.clj` for configuration.
 
 To run tests `lein test`
 
+### Running
+
+Two ways, run `lein repl`, then
+
+    (require 'robb1e.web)
+    (robb1e.web/start 8080)
+
+or `lein run`
+
 ## Production
 
 ### Heroku
