@@ -45,6 +45,12 @@ Set multiple build packs for both Clojure and Ruby
 
     heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
 
+### Migrations
+
+Deploy the latest code, then:
+
+`heroku run rake db:migrate`
+
 ## License
 
 Distributed under the Eclipse Public License either version 1.0 or (at
