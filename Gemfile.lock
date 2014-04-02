@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/robb1e/sprockets-standalone.git
+  revision: 5576b4ead6d6f24bd7f6445eb8e9d008a0c99b7b
+  specs:
+    sprockets-standalone (1.2.0)
+      rake
+      sprockets (~> 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,6 +58,7 @@ GEM
     rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    sass (3.2.15)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -68,4 +77,6 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-postgresql-adapter
+  sass
+  sprockets-standalone!
   standalone_migrations

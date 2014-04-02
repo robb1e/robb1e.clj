@@ -20,6 +20,10 @@ Run `lein sass clean` to clear the generated files.
 
 See `project.clj` for configuration.
 
+#### Sprockets
+
+    rake assets:clobber assets:compile
+
 ### Testing
 
 To run tests `lein test`

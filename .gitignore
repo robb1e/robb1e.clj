@@ -8,3 +8,6 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 /resources/public/stylesheets/*.css
+/resources/public/stylesheets/*.gz
+/resources/public/stylesheets/manifest.json
+.sass-cache
