@@ -7,7 +7,7 @@ pom.xml.asc
 *.class
 /.lein-*
 /.nrepl-port
-/resources/public/stylesheets/*.css
-/resources/public/stylesheets/*.gz
-/resources/public/stylesheets/manifest.json
+/resources/public/assets/*.css
+/resources/public/assets/*.gz
+/resources/public/assets/manifest.json
 .sass-cache

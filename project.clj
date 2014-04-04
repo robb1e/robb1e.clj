@@ -15,7 +15,7 @@
   :main robb1e.web
   :plugins [[lein-haml-sass "0.2.7-SNAPSHOT"]]
   :sass {:src "resources/sass"
-         :output-directory "resources/public/stylesheets"
+         :output-directory "resources/public/assets"
          :output-extension "css"
          ;; Other options (provided are default values)
          ;; :auto-compile-delay 250

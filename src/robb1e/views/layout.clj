@@ -3,10 +3,10 @@
             [clojure.data.json :as json]))
 
 (def assets
-  ((json/read-str (slurp "resources/public/stylesheets/manifest.json")) "assets"))
+  ((json/read-str (slurp "resources/public/assets/manifest.json")) "assets"))
 
 (defn asset [file]
-  (str "/stylesheets/" (assets file)))
+  (str "/assets/" (assets file)))
 
 (defn common [body]
   (h/html5
