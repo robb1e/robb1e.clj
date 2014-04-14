@@ -9,10 +9,13 @@
 (defn date-test []
   (coerce/to-sql-date (tm/date-time 2014 4 14)))
 
+(defn post-entry []
+  {:title "Title" :created_at (date-test) :publication "personal" :excerpt "Excerpt"})
+
 (deftest can-render-post
 
   (testing "rendering a single post"
-    (is (= "<div class=\"Post\"><h1>Title</h1><div>April 14, 2014</div></div>" (post/render-post {:title "Title" :created_at (date-test)} ))))
+    (is (= "<div class=\"Post--personal\"><h1>Title</h1><div class=\"Post__Published\">April 14, 2014</div><div class=\"Post__Excerpt\">Excerpt</div></div>" (post/render-post (post-entry)))))
 
   (testing "rendering a list of posts"
-    (is (= "<div class=\"Posts\"><div class=\"Post\"><h1>Title</h1><div>April 14, 2014</div></div></div>" (post/render-post-list (list {:title "Title" :created_at (date-test)}))))))
+    (is (= "<div class=\"Posts\"><div class=\"Post--personal\"><h1>Title</h1><div class=\"Post__Published\">April 14, 2014</div><div class=\"Post__Excerpt\">Excerpt</div></div></div>" (post/render-post-list (list (post-entry)))))))

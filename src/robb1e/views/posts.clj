@@ -5,9 +5,10 @@
             [hiccup.core :as h]))
 
 (defn render-post [post]
-  (h/html [:div {:class "Post"}
+  (h/html [:div {:class (str "Post--" (post :publication) )}
     [:h1 (post :title)]
-    [:div (core/time-format (coerce/from-sql-date (post :created_at)))]]))
+    [:div {:class "Post__Published"} (core/time-format (coerce/from-sql-date (post :created_at)))]
+    [:div {:class "Post__Excerpt"} (post :excerpt)]]))
 
 (defn render-post-list [posts]
   (h/html [:div {:class "Posts"}
