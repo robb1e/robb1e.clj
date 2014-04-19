@@ -1,5 +1,10 @@
 require 'standalone_migrations'
 require 'sprockets/standalone'
+require 'sass'
+
+Sass.load_paths << File.expand_path("bower_components/bourbon/app/assets/stylesheets")
+Sass.load_paths << File.expand_path("bower_components/neat/app/assets/stylesheets")
+Sass.load_paths << File.expand_path("bower_components/compass-mixins/lib")
 
 StandaloneMigrations::Tasks.load_tasks
 

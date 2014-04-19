@@ -1,0 +1,23 @@
+{
+  "name": "robb1e",
+  "version": "0.0.1",
+  "homepage": "https://github.com/robb1e/robb1e.clj",
+  "authors": [
+    "Robbie Clutton <robert.clutton@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bourbon": ">=3.1",
+    "neat": "1.1.0",
+    "compass-mixins": "latest"
+  }
+}

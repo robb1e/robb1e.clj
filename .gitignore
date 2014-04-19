@@ -11,3 +11,4 @@ pom.xml.asc
 /resources/public/assets/*.gz
 /resources/public/assets/manifest.json
 .sass-cache
+bower_components
