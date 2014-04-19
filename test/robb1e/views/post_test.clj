@@ -15,7 +15,7 @@
 (deftest can-render-post
 
   (testing "rendering a single post"
-    (is (= "<div class=\"Post--personal\"><h1>Title</h1><div class=\"Post__Published\">April 14, 2014</div><div class=\"Post__Excerpt\">Excerpt</div></div>" (post/render-post (post-entry)))))
+    (is (= "<div class=\"Post--personal\"><h2>Title</h2><div class=\"Post__Published\">April 14, 2014</div><div class=\"Post__Excerpt\">Excerpt</div></div>" (post/render-post (post-entry)))))
 
   (testing "rendering a list of posts"
-    (is (= "<div class=\"Posts\"><div class=\"Post--personal\"><h1>Title</h1><div class=\"Post__Published\">April 14, 2014</div><div class=\"Post__Excerpt\">Excerpt</div></div></div>" (post/render-post-list (list (post-entry)))))))
+    (is (= "<section class=\"Posts\"><div class=\"Post--personal\"><h2>Title</h2><div class=\"Post__Published\">April 14, 2014</div><div class=\"Post__Excerpt\">Excerpt</div></div></section>" (post/render-post-list (list (post-entry)))))))
