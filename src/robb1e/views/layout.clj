@@ -14,6 +14,6 @@
     [:title "robb1e dot com"]
     (h/include-css (asset "application.css"))]
    [:body
-    [:div {:id "header"}
-     [:h1 {:class "container"} "robb1e dot com"]]
+    [:div {:id "header" :class "container"}
+     [:h1 "robb1e dot com"]]
     [:div {:id "content" :class "container"} body]]))
